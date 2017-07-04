@@ -1,8 +1,7 @@
 FROM debian:9
 
 RUN apt-get update \
-    && apt-get install -y wget openjdk-8-jre vim gcc avr-libc avrdude binutils-avr
-RUN apt-get install -y xz-utils
+    && apt-get install -y wget openjdk-8-jre gcc avr-libc avrdude binutils-avr xz-utils
 
 ENV ARDUINO_IDE_VERSION 1.8.3
 
